@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/cream-pixels.png');
+  background-color: #f7f4e0; 
+  color: #3b2f2f; 
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f7f4e0;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #014034;
+  box-shadow: 0 0 12px rgba(1, 64, 52, 0.15);
+}
+
+
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #143a16;
+  alignment-baseline: left;
+}
+
+.tagline {
+  font-style: italic;
+  color: #6e6e6e;
+  font-size: 1rem;
+}
+
+/* Navbar */
+
+/* Fixed Top Nav in Deep Emerald */
+nav {
+  background-color: #143a16;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #fffef2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c1a57b; /* soft golden beige */
+}
+
+/* Add padding so content doesn't hide under fixed nav */
+body {
+  padding-top: 90px; /* adjust based on navbar height */
+}
+
+/* Sections */
+
+section {
+  background-color: #f7f4e0;
+  margin: 30px 0;
+  padding: 20px;
+  border-left: 4px solid #014034;
+  border-radius: 10px;
+}
+
+section h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #014034;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+
+/* Testimonials & FAQ */
+
+#testimonials,
+#story,
+#faq {
+  margin: 30px 0;
+  padding-top: 20px;
+}
+
+#faq ul {
+  padding-left: 20px;
+}
+
+#faq li {
+  margin-bottom: 10px;
+}
+
+/* Contact Links */
+
+a {
+  color: #014034;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #c1a57b;
+}
+
+/* WhatsApp Floating Button */
+
+#whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  background-color: #014034;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#whatsapp-btn:hover {
+  transform: scale(1.1);
+  background-color: #002c22;
+}
+
+#whatsapp-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  color: #777;
+}
+
+/* Utility */
+
+ul {
+  padding-left: 20px;
+}
+
+/* About Section Enhancements */
+
+#about em {
+  font-style: normal;
+  color: #014034;
+  font-weight: 500;
+}
+
+#about strong {
+  color: #3b2f2f;
+  font-size: 1.2rem;
+}
+
+#about p:last-child {
+  color: #014034;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fffef2;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background-color: #014034;
+  color: #fffaf0;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #012a29;
+}
+
+.swiper {
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(1, 64, 52, 0.2);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#fabric-collection {
+  padding: 50px 20px;
+  background-color:#f7f4e0;
+  text-align: center;
+}
+
+#fabric-collection h2 {
+  font-size: 2rem;
+  color: #014034;
+  margin-bottom: 30px;
+}
+
+.fabric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.fabric-card {
+  background: #f7f4e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fabric-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.fabric-card p {
+  padding: 12px;
+  font-weight: 600;
+  color: #2f2f2f;
+  background-color: #f7f4e0;
+}
+
+.fabric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #014034; /* emerald dark */
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.developer-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.developer-credit img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
