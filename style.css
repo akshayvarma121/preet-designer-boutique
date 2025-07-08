@@ -242,19 +242,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.hero-btn {
-  background-color: #014034;
-  color: #fffaf0;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
 
-.hero-btn:hover {
-  background-color: #012a29;
-}
 
 .swiper {
   width: 90%;
@@ -342,5 +330,23 @@ footer {
   object-fit: cover;
   border: 2px solid white;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+.btn {
+  background-color:  #014034; /* deep emerald */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #f7f4e0; /* lighter emerald on hover */
+  transform: scale(1.05);
 }
 
